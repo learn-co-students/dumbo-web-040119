@@ -119,8 +119,25 @@ def game_hash
   }
 end
 
+def all_players
+  # all_players = game_hash[:away][:players].concat(game_hash[:home][:players])
+  game_hash[:away][:players] + game_hash[:home][:players]
+end
 
+def find_player(player_name)
+  all_players.find do |player_hash|
+    player_name == player_hash[:player_name]
+  end
+end
 
+def num_points_scored(player_name)
+  #get the points
+  find_player(player_name)[:points]
+end
+
+def shoe_size(player_name)
+  find_player(player_name)[:shoe]
+end
 
 
 # # EXERCISE:
@@ -150,9 +167,5 @@ end
 # arr.select do |num|
 #   7
 # end
-
-
-
-
 
 

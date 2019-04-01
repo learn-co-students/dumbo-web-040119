@@ -15,6 +15,5 @@
   * What is Red, Green, Refactor, and how can I use that process?
 
 
-
 Make it work (shameless green), make it right, make it fast.
 
