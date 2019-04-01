@@ -1,0 +1,8 @@
+What is this method for?
+What does this method return?
+What should the block return?
+
+  * `#each`
+  * `#map`
+  * `#select`
+  * `#find`
