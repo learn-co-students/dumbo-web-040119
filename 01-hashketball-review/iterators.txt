@@ -1,8 +1,46 @@
-What is this method for?
-What does this method return?
-What should the block return?
 
-  * `#each`
-  * `#map`
-  * `#select`
-  * `#find`
+map - transforms
+
+- performs an operation on the array
+- returns a different array of new values based on an operation
+
+
+cat_names = ["Pauly Walnuts", "Elliott", "Wesker"]
+
+transformed_cat_names = cat_names.map do |cat_name|
+  cat_name.upcase
+end
+
+
+select
+
+shorter_array_of_cat_names = cat_names.select do |cat_name|
+  # if cat_name.length > 6
+  #   true
+  # else
+  #   false
+  # end
+  # p cat_name.length > 6
+  cat_name.length > 6 #? true : false
+end
+
+
+
+find
+
+first_long_cat_name = cat_names.find do |cat_name|
+  cat_name.length > 6
+end
+
+
+
+each
+
+shorter_array_of_cat_names = cat_names.each do |cat_name|
+  puts cat_name
+end
+
+
+
+
+
