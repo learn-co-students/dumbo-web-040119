@@ -20,13 +20,13 @@
 * Create a User class. The class should have these methods:
   ✅ `#initialize` which takes a username
   ✅ a reader method for the username
-  * `#post_tweet` that takes a message, creates a new tweet, and adds it to the user's tweet collection
-  * `#tweets` that returns an array of Tweet instances
+  ✅ `#post_tweet` that takes a message, creates a new tweet, and adds it to the user's tweet collection
+  ✅ `#tweets` that returns an array of Tweet instances
 * Create a Tweet class. The class should have these methods:
-  * `Tweet#message` that returns a string
-  * `Tweet#user` that returns an instance of the user class
+  ✅ `Tweet#message` that returns a string
+  ✅ `Tweet#user` that returns an instance of the user class
   * `Tweet.all` that returns all the Tweets created.
-  * `Tweet#username` that returns the username of the tweet's user
+   `Tweet#username` that returns the username of the tweet's user
 
 For every (x), how many (y)?
 For every (y), how many (x)?
