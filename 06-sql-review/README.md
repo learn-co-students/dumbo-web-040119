@@ -10,24 +10,37 @@
 1. Write the SQL to return all of the rows in the artists table?
 
 ```SQL
-
+SELECT * FROM artists;
 ```
 
 2. Write the SQL to select the artist with the name "Black Sabbath"
 
 ```SQL
-
+SELECT * FROM artists
+WHERE name like '%Black%'
 ```
 
 8. Write the SQL to display an artists name next to their album title
 
 ```sql
+select artists.name, albums.title from artists
+inner join albums
+on artists.id = albums.artist_id
 
 ```
 
 9. Write the SQL to display artist name, album name and number of tracks on that album
 
 ```sql
+
+select artists.name, albums.title, count(tracks.id) as track_count from artists
+join albums
+on artists.id = albums.artist_id
+join tracks
+on albums.id = tracks.album_id
+group by album_id
+order by track_count DESC
+
 
 ```
 
