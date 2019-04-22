@@ -1,9 +1,15 @@
 require 'sinatra'
 
 get '/' do
-  'Hello world!'
+  'Hello word!'
 end
 
+get '/luka' do
+  '🍩' * 10
+end
 
+get '/matt' do
+  '🍣' * 100
+end
 
 
