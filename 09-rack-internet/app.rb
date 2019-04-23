@@ -6,7 +6,11 @@ class App
 
     status_code = 500
     header = { "Content-type" =>  "text/html" }
-    body = ["<html>Banana</html>"]
+    if environment_hash["path"] == "/graham"
+      body = ["<html>Crackers</html>"]
+    else
+
+    end
 
     return [status_code, header, body]
   end

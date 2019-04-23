@@ -1,0 +1,23 @@
+I AM A LIST THANKS
+
+<form method="GET" action="/cars">
+  
+  <input type="text" name="q" />
+  <input type="submit" />
+
+</form>
+
+
+  <%# @cars.first.make %>
+<ol>
+  <% @cars.each do |car| %>
+    <li>
+      <a href="/cars/<%= car.id %>">
+        <%= car.year %>
+        <%= car.make %>
+        <%= car.model %>
+      </a>
+    </li>
+  <% end %>
+</ol>
+
