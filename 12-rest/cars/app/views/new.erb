@@ -1,22 +1,5 @@
 HI IA M A FORM
 
 <form action="/cars" method="POST">
-
-  <ul>
-    <li>
-      <label for="car-make">Make:</label>
-      <input id="car-make" type="text" name="make" />
-    </li>
-    <li>
-      <label for="car-model">Model:</label>
-      <input id="car-model" type="text" name="model" />
-    </li>
-    <li>
-      <label for="car-year">Year:</label>
-      <input id="car-year" type="number" name="year" />
-    </li>
-  </ul>
-
-  <input type="submit" value="Go!" />
-  <!-- <button type="submit">Submit</button> -->
+  <%= erb :form %>
 </form>

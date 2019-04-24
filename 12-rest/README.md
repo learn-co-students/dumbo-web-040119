@@ -10,9 +10,9 @@
 # Code through
 ✅ Index of cars
 ✅ Show one car
-* Create a car
-  * How tf do forms work
-  * Mass assignment
+✅ Create a car
+  ✅ How tf do forms work
+  ✅ Mass assignment
 
 # This afternoon
 * Updating a car

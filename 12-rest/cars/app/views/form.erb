@@ -1,0 +1,16 @@
+<input type="hidden" name="_method" value="PATCH" />
+  <ul>
+    <li>
+      <label for="car-make">Make:</label>
+      <input id="car-make" type="text" name="car[make]" value="<%= @car.make %>" />
+    </li>
+    <li>
+      <label for="car-model">Model:</label>
+      <input id="car-model" type="text" name="car[model]" value="<%= @car.model %>" />
+    </li>
+    <li>
+      <label for="car-year">Year:</label>
+      <input id="car-year" type="number" name="car[year]" value="<%= @car.year %>" />
+    </li>
+  </ul>
+  <input type="submit" value="Go!" />
