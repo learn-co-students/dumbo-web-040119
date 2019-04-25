@@ -1,0 +1,19 @@
+HI I AM AN INDEX OF BRANDS
+
+
+<ul>
+  <% @brands.each do |brand| %>
+    <li>
+      <%= brand.manufacturer.name %>
+      <%= brand.name %>
+      <ul>
+      <% brand.cars.each do |car| %>
+        <li>
+          <%= car.year %>
+        </li>
+      <% end %>
+      </ul> 
+    </li>
+  <% end %>
+
+</ul>

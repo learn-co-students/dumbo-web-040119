@@ -1,0 +1,22 @@
+
+  <ul>
+    <li>
+      <label for="car-year">Year:</label>
+      <input id="car-year" type="number" name="car[year]" value="<%= @car.year %>" />
+    </li>
+    <li>
+      <label for="car-brand_id">Brand:</label>
+      <!-- <input id="car-brand_id" type="number" name="car[brand_id]" value="<%= @car.brand_id %>" /> -->
+
+      <select name="car[brand_id]">
+        <% @brands.each do |brand| %>
+          <option value="<%= brand.id %>" 
+            <% if @car.brand_id == brand.id %>selected<% end %>
+            >
+            <%= brand.make_and_model %>
+          </option>
+        <% end %>
+      </select>
+    </li>
+  </ul>
+  <input type="submit" value="Go!" />
