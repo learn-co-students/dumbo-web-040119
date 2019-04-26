@@ -1,0 +1,18 @@
+HI I AM A LIST
+ 
+<ul>
+  <% @dinos.each do |dino| %>
+    <li>
+      <!-- <a href="/dinosaurs/<%= dino.id %>">
+        <%= dino.name %>
+      </a>
+ -->
+
+    <%# link_to "View #{ dino.name }", "/dinosaurs/#{ dino.id }" %>
+    <%# link_to "View #{ dino.name }", dinosaur_path(dino.id) %>
+    <%# link_to "View #{ dino.name }", dinosaur_path(dino) %>
+    <%= link_to "View #{ dino.name }", dino %>
+    </li>
+  <% end %>
+</ul>
+

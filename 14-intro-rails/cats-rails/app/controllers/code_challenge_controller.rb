@@ -1,0 +1,2 @@
+class CodeChallengeController < ApplicationController
+end
