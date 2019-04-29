@@ -1,0 +1,20 @@
+<%= form_for @dino do |form| %>
+
+  <ul>
+    <li>
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </li>
+    <li>
+      <%= form.label :ferociousness %>
+      <%= form.number_field :ferociousness %>
+    </li>
+    <li>
+      <%= form.label :vegetarian %>
+      <%= form.check_box :vegetarian %>
+    </li>
+  </ul>
+
+  <%= form.submit %>
+
+<% end %>
