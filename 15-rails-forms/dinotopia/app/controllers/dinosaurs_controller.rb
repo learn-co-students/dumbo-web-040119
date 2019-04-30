@@ -1,6 +1,6 @@
 class DinosaursController < ApplicationController
 
-  before_action :get_dinosaur, only: [:edit, :update]
+  before_action :get_dinosaur, only: [:show, :edit, :update]
 
   def index
     # redirect_to dinosaurs_path unless request.path == dinosaurs_path
