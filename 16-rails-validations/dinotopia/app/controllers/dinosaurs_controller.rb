@@ -12,13 +12,20 @@ class DinosaursController < ApplicationController
   end
 
   def create
-    @dino = Dinosaur.create(dinosaur_params)
-    redirect_to @dino
+    @dino = Dinosaur.new(dinosaur_params)
+    if @dino.save
+      redirect_to @dino
+    else
+      render :new
+    end
   end
 
   def update
-    @dino.update(dinosaur_params)
-    redirect_to @dino
+    if @dino.update(dinosaur_params)
+      redirect_to @dino
+    else
+      render :edit
+    end
   end
 
   def destroy

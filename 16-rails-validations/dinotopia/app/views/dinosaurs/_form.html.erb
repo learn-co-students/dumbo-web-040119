@@ -1,3 +1,12 @@
+<ol class="errors">
+  <% @dino.errors.full_messages.each do |message| %>
+    <li>
+      <%= message %>
+    </li>
+  <% end %>
+</ol>
+
+
 <%= form_for @dino do |form| %>
 
   <ul>
