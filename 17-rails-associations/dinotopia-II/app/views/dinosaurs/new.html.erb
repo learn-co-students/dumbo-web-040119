@@ -1,0 +1,21 @@
+<%= form_for @dinosaur do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :museum_id %>
+  <%# f.text_field :museum_id %>
+  <%= f.collection_select :museum_id, @museums, :id, :name %>
+  <%# f.collection_select :museum_id, ["FoO", "bAr", "BAz", "qUUx"], :upcase, :downcase %>
+
+ <!--  <select name="dinosaur[museum_id]">
+    <option value="1">Foo</option>
+    <option value="2">Bar</option>
+  </select> -->
+
+  <%= f.label :species_id %>
+  <%= f.collection_select :species_id, Species.all, :id, :name %>
+
+  <%= f.submit %>
+
+<% end %>

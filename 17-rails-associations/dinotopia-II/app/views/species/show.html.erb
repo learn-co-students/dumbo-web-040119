@@ -1,0 +1,13 @@
+<h1><%= @species.name %></h1>
+<dl>
+  <dt>Ferociousness</dt>
+  <dd><%= @species.ferociousness %></dd>
+  <dt>Vegetarian</dt>
+  <dd><%= @species.vegetarian %></dd>
+</dl>
+
+<%= link_to "Edit #{ @species.name }", edit_species_path(@species) %>
+
+<%= button_to "Go extinct", species_path(@species), method: :delete %>
+
+

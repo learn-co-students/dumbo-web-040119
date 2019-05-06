@@ -1,0 +1,13 @@
+<h1><%= @dino.name %></h1>
+<dl>
+  <dt>Ferociousness</dt>
+  <dd><%= @dino.ferociousness %></dd>
+  <dt>Vegetarian</dt>
+  <dd><%= @dino.vegetarian %></dd>
+</dl>
+
+<%= link_to "Edit #{ @dino.name }", edit_dinosaur_path(@dino) %>
+
+<%= button_to "Go extinct", dinosaur_path(@dino), method: :delete %>
+
+

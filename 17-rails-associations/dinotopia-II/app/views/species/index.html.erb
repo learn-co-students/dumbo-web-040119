@@ -1,0 +1,9 @@
+<h1>Index of Dinosaur Species</h1>
+<%= link_to "New species", new_species_path %>
+<ul>
+  <% @species.each do |species| %>
+    <li>
+      <%= link_to species.name, species %>
+    </li>
+  <% end %>
+</ul>
