@@ -12,6 +12,7 @@ class UsersController < ApplicationController
     # @user.save
 
     if @user.valid?
+      session[:user_id] = @user.id
       redirect_to colors_path
     else
       @errors = @user.errors.full_messages

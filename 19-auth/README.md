@@ -18,6 +18,7 @@
 # Key questions for Authorization
 * How do we keep track of which user has logged in?
 * How can we display who's logged in?
+
 * How can we limit user behavior based on who's logged in?
 * How do we log out?
 
