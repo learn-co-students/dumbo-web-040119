@@ -10,5 +10,6 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :create]
   resources :login, only: [:new, :create]
+  delete "logout", to: "login#destroy", as: "log_out"
 
 end
