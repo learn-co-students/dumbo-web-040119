@@ -25,22 +25,6 @@ let listTag = document.getElementById("blobs")
 // console.log(listTag.innerHTML)
 // listTag.innerHTML = ""
 
-// add taco, burger, fries to the list
-
-function addBlob(moje) {
-  // console.log(sdfjkh, sdhfkjs, hsdkfjhasdf, sadfhkjsdhf)
-  const newLi = document.createElement("li")
-  // console.log(newLi)
-  newLi.innerText = moje
-  listTag.appendChild(newLi)
-}
-
-
-// addBlob("🌮")
-// addBlob("🍔")
-// addBlob("🥥")
-// addBlob("🍟")
-
 
 // actually, let's delete everything but the poop
 const actualArray = Array.from(listTag.children)
@@ -66,6 +50,23 @@ let poopEmojiElement = actualArray.find(function(child){
 })
 
 poopEmojiElement.innerText = "🍩"
+
+
+// add taco, burger, fries to the list
+
+function addBlob(moje) {
+  // console.log(sdfjkh, sdhfkjs, hsdkfjhasdf, sadfhkjsdhf)
+  const newLi = document.createElement("li")
+  // console.log(newLi)
+  newLi.innerText = moje
+  listTag.appendChild(newLi)
+}
+
+
+addBlob("🌮")
+addBlob("🍔")
+addBlob("🥥")
+addBlob("🍟")
 
 
 
