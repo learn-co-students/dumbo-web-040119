@@ -1,0 +1,15 @@
+
+li_children = []
+
+
+li_children.select do |child|
+  child.innerHTML !== "💩"
+  child.innerText !== "💩"
+end
+
+# only get the children that don't contain poop
+
+
+def potato
+  5 + 5
+end
