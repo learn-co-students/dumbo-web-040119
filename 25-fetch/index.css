@@ -27,7 +27,7 @@ button:focus {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  background-color: #ccc;
+  background-color: #00000033;
   border-radius: 85px;
   min-height: 170px;
   font-size: 81px;
@@ -68,4 +68,89 @@ button:focus {
     transform: scale(1, 1)rotate(0deg);
     opacity: 1;
   }
+}
+.gif-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+#image-wun, #image-too {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  animation: slideUp 3s cubic-bezier(0, 0.5, 1, 0.5);;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+}
+body {
+  transition: background 2s;
+}
+body.errord  {
+  background: red;
+}
+#dogs, #hello-button, h1 {
+  transition: transform 2s ease-in, opacity 2s ease-in;
+}
+.errord #dogs {
+  transform: scale(0, 1);
+  opacity: 0;
+}
+.errord #hello-button {
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+.errord h1 {
+  transform: translateY(-100px);
+  opacity: 0;
+}
+.errord #image-wun, .errord #image-too {
+  animation-play-state: running;
+}
+
+#image-wun {
+  margin-left: -240px;
+  animation-delay: 1s;
+}
+#image-too {
+  animation-delay: 4s;
+  margin-left: -288px;
+}
+
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(-304px);
+  }
+}
+
+body { 
+  overflow: hidden;
+}
+canvas {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.hide {/*
+  /*opacity: .5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*background: #000;*/
+  display: none;
+}
+.hide canvas {
+  width: 256px !important;
+  height: 256px !important;
 }
