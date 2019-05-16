@@ -132,7 +132,7 @@ let studentObj = {
   animals: ["Puppies", "Stallions"]
 }
 
-let studentCopy = {...studentObj, ...studentsObj.animals}
+let studentCopy = {...studentObj, animals: ...studentsObj.animals}
 // let studentCopy = Object.assign({}, studentObj)
 
 let copy = [...students]
