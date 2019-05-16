@@ -1,4 +1,16 @@
 
+function setupEditButton(){
+  document.getElementById("js-edit-movie-button").addEventListener("click", function(){
+    // scrape some strings off the dom
+    const title = document.querySelector("span.title").innerText
+    const year = document.querySelector("span.year").innerText
+
+    // populate inputs on edit
+    editForm.name.value = title
+    editForm.year.value = year
+  })
+}
+
 function showMovie(id){
   fetch(`http://localhost:3000/movies/${ id }`)
     .then(res => res.json())
@@ -10,7 +22,19 @@ function slapMovieOnTheDetail(movie){
   detail.querySelector(".year").innerText = movie.year
 }
 
-function onSubmit(event){
+function onEditSubmit(event){
+  event.preventDefault(); // prevents refreshing
+  const updatedMovie = { 
+    title: editForm.name.value,
+    year: editForm.year.value
+  }
+  // console.log(updatedMovie)
+  fetch("", {
+
+  })
+}
+
+function onNewSubmit(event){
   const movieName = newForm.name.value
   const movieYear = newForm.year.value
   event.preventDefault();
@@ -24,8 +48,12 @@ function onSubmit(event){
   })
 }
 
-function bindFormSubmit(){
-  newForm.addEventListener("submit", onSubmit)
+function bindNewFormSubmit(){
+  newForm.addEventListener("submit", onNewSubmit)
+}
+
+function bindEditFormSubmit(){
+  editForm.addEventListener("submit", onEditSubmit)
 }
 
 function slapMovieOnTheList(movie) {
@@ -53,6 +81,19 @@ document.addEventListener("DOMContentLoaded", function(){
   newForm = document.querySelector(".js-new-movie-form")
   editForm = document.querySelector(".js-edit-movie-form")
 
+  setupEditButton();
   fillMovieList(movieList)
-  bindFormSubmit()
+  bindNewFormSubmit()
+  bindEditFormSubmit()
 })
+
+
+
+
+
+
+
+
+
+
+

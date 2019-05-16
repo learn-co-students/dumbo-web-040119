@@ -12,7 +12,10 @@
 
 
 # Three pillar questions
-1. 
-2. 
-3. 
+1. When X event happens
+
+2. Make Y fetch
+
+3. Change the DOM in Z way
+  
 
