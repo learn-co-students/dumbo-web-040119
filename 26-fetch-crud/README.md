@@ -1,11 +1,18 @@
 # Key To-Do's
 - Map out CRUD:
-  - When X happens
+  - When X event happens
   - Make Y fetch
   - Slap Z on (off) the DOM
-<!-- - Postman
+
+
+
+
+
+- Postman
 - json-server
 - Dataset
-- Optimistic vs. pessimistic rendering
 
- -->
+
+
+<!-- - Optimistic vs. pessimistic rendering -->
+
