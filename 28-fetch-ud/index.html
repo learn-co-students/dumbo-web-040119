@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Bad movies</title>
+    <link rel="Stylesheet" href="style.css" />
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <button class="add-movie js-add-movie">New movie</button>
+    <ul class="sidebar js-movies">
+    </ul>
+    <main class="detail js-detail">
+      <article>
+        <h2>
+          <span class="title"></span> 
+          (<span class="year"></span>)
+        </h2>
+        <button type="button">Edit <span class="title"></span></button>
+        <button type="button" id="js-delete">Delete <span class="title"></span></button>
+      </article>
+      <form class="js-new-movie-form">
+        <ul>
+          <li>
+            <label>Name</label>
+            <input type="text" name="name">
+          </li>
+
+          <li>
+            <label>Year</label>
+            <input type="text" name="year">
+          </li>
+        </ul>
+        <input type="submit" value="Create" />
+      </form>
+      <form class="js-edit-movie-form">
+        <ul>
+          <li>
+            <label>Name</label>
+            <input type="text" name="name">
+          </li>
+
+          <li>
+            <label>Year</label>
+            <input type="text" name="year">
+          </li>
+        </ul>
+        <input type="submit" value="Update"/>
+      </form>
+    </main>
+  </body>
+</html>

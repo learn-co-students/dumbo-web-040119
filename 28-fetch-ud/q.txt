@@ -1,0 +1,21 @@
+
+
+
+- Which fetches need to happen for this app to work the way it does?
+
+
+
+- Read a list of movies - read - movies#index
+GET /movies
+
+- Read a movie - read - movies#show
+GET /movies/:id
+
+- Add a movie - create - movies#new / movies#create
+POST /movies
+
+- Edit a movie - update - movies#edit / movies#update
+PATCH /movies/:id
+
+- Delete a movie - delete - movies#destroy
+DELETE /movies/:id
