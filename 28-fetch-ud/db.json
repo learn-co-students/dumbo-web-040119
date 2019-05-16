@@ -2,7 +2,7 @@
   "movies": [
     {
       "id": 1,
-      "title": "Spice World",
+      "title": "Spice Wor",
       "year": "1997",
       "cast": [
         "Baby Spice",
@@ -15,7 +15,7 @@
     },
     {
       "id": 3,
-      "title": "Battlefield Earth",
+      "title": "Ear",
       "year": "2000",
       "cast": [
         "John Travolta"
@@ -23,7 +23,7 @@
     },
     {
       "id": 5,
-      "title": "Garden State",
+      "title": "Garden Stat",
       "year": "2009",
       "cast": [
         "Natalie Portman",
@@ -39,6 +39,11 @@
       "title": "Refactoring",
       "year": "2019",
       "id": 7
+    }
+  ],
+  "spice-girls": [
+    {
+      "name": "sporty"
     }
   ]
 }

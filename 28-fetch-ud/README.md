@@ -10,12 +10,7 @@
   * How can I handle the response from fetch to update my DOM with the new data?
     * What is optimistic rendering? how is it different than pessimistic rendering? How do I decide which one to use?
 
-
 # Three pillar questions
 1. When X event happens
-
 2. Make Y fetch
-
 3. Change the DOM in Z way
-  
-
