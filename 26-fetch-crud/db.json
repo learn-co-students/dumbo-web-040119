@@ -1,0 +1,34 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Spice World",
+      "year": "1997",
+      "cast": [
+        "Baby Spice",
+        "Posh Spice",
+        "Sporty Spice",
+        "Meat Loaf",
+        "Alan Cumin",
+        "Scary Spice"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Battlefield Earth",
+      "year": "2000",
+      "cast": [
+        "John Travolta"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Garden State",
+      "year": "2009",
+      "cast": [
+        "Natalie Portman",
+        "Zach Braff"
+      ]
+    }
+  ]
+}
