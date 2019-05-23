@@ -1,0 +1,24 @@
+{
+  "cupcakes": [
+    {
+      "id": 1,
+      "flavor": "Chocolate",
+      "sprinkles": true
+    },
+    {
+      "id": 2,
+      "flavor": "Red Velvet",
+      "sprinkles": false
+    },
+    {
+      "id": 3,
+      "flavor": "Vanilla",
+      "sprinkles": true
+    },
+    {
+      "id": 4,
+      "flavor": "Some hipster bullshit with bacon",
+      "sprinkles": false
+    }
+  ]
+}
