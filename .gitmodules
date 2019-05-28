@@ -1,0 +1,3 @@
+[submodule "endeavornote-backend"]
+	path = endeavornote-backend
+	url = git@github.com:lsamano/endeavornote-backend.git
