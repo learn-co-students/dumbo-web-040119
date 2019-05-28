@@ -8,9 +8,12 @@
 // }
 
 
-fetch("https://dog.ceo/api/breeds/image/random")
-  .then(res => res.json())
-  .then(data => slapItOnTheDOM(data))
+// fetch("https://dog.ceo/api/breeds/image/random")
+//   .then(res => res.json())
+//   .then(data => updateLikes())
+//   .then(updateLikes)
+  // .then(updateLikes()) // no
+  // .then(function(res) { return res.text() })
   // .then(callbackOne)
 
 
@@ -29,17 +32,19 @@ fetch("https://dog.ceo/api/breeds/image/random")
 
 // https://twitter.com/dan_abramov/status/790858537513656320
 
-/*
+var speak = function(){
+  console.log(this)
+  return this.says + "!"
+}
+
+
+
 const cat = {
   name: "Fluffy",
   says: "Meow",
-  speak: function(){
-    console.log(this)
-    return this.says + "!"
-  }
+  speak: speak
 }
 
-var speak = cat.speak
 // debugger
 
 console.log(cat.speak)
@@ -72,7 +77,6 @@ const human = {
 }
 
 console.log(human.speak())
-*/
 
 // What are some key differences / gotchas 
 // surrounding arrow functions?
