@@ -1,0 +1,3 @@
+[submodule "endeavornote-backend"]
+	path = 32.5-rails-api/endeavornote-backend
+	url = git@github.com:lsamano/endeavornote-backend.git
