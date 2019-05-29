@@ -32,58 +32,56 @@
 
 // https://twitter.com/dan_abramov/status/790858537513656320
 
-var speak = function(){
-  console.log(this)
-  return this.says + "!"
-}
+// function speak() {
+//   console.log(this)
+//   return this.says + "!"
+// }
 
+// const cat = {
+//   name: "Fluffy",
+//   says: "Meow",
+//   speak: speak
+// }
 
+// // debugger
 
-const cat = {
-  name: "Fluffy",
-  says: "Meow",
-  speak: speak
-}
+// console.log(cat.speak)
+// console.log(speak)
 
-// debugger
+// console.log(cat.speak === speak)
 
-console.log(cat.speak)
-console.log(speak)
+// console.log(this)
 
-console.log(cat.speak === speak)
+// const dog = {
+//   name: "Rover",
+//   says: "Woof",
+//   speak: cat.speak
+// }
 
-console.log(this)
+// console.log(cat.speak())
+// console.log(dog.speak())
+// console.log(dog === cat)
+// console.log(dog.speak === cat.speak)
 
-const dog = {
-  name: "Rover",
-  says: "Woof",
-  speak: cat.speak
-}
+// // const speak = 
 
-console.log(cat.speak())
-console.log(dog.speak())
-console.log(dog === cat)
-console.log(dog.speak === cat.speak)
+// const human = {
+//   name: "Dan Abramov",
+//   says: "In JavaScript, the value of this is determined by the execution context unless you use an arrow function",
+//   speak: () => {
+//     console.log(this)
+//     return this.says + "!"
+//   } 
+// }
 
-const speak = 
-
-const human = {
-  name: "Dan Abramov",
-  says: "In JavaScript, the value of this is determined by the execution context unless you use an arrow function",
-  speak: () => {
-    console.log(this)
-    return this.says + "!"
-  } 
-}
-
-console.log(human.speak())
+// console.log(human.speak())
 
 // What are some key differences / gotchas 
 // surrounding arrow functions?
 // How do arrow functions treat `this` 
 // differently than traditional functions?
 
-/*
+
 class Lightswitch {
 
   constructor(args) {
@@ -111,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
   new Lightswitch({ colorHex: "#0f0", colorName: "Green" });
 })
 
-*/
+
 
 
 
@@ -123,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // const spiceGirls = ["Scary", "Baby", "Ginger", "Posh", "Sporty"]
 
-  // // const callback = function(adjective) { adjective.toUpperCase() + " SPICE" }
+  // const callback = function(adjective) { adjective.toUpperCase() + " SPICE" }
   // // const callback = adjective => { adjective.toUpperCase() + " SPICE" }
   // // const callback = (adjective) => { adjective.toUpperCase() + " SPICE" }
   // const callback = (adjective) => { adjective.toUpperCase() + " SPICE" }
