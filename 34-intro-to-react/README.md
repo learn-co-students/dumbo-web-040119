@@ -2,12 +2,12 @@ Intro to React // JSX & Props
 =============================
 
 ## SWBATs
-
-- [ ] Visualize/Identify Components on any website
-- [ ] Explain what a Component is conceptually in the UI
+- [x] Visualize/Identify Components on any website
+- [x] Explain what a Component is conceptually in the UI
 - [ ] Briefly explain Babel's purpose in React
 - [ ] Explain what a React Component actually is in code
 - [ ] Use JSX to build custom components and render them in the browser
+
 - [ ] Understand how `create-react-app` works and what it offers a developer
 - [ ] Use props to make components more dynamic and reusable
 - [ ] See how props are to components as arguments are to functions
@@ -20,28 +20,64 @@ Intro to React // JSX & Props
 
 ### Declarative vs Imperative Programming
 
+Write you intend for the code to do rather than writing every step out.
+
+### Making a burrito:
+Get some tortilla
+Get some ingredients
+Lay tortilla flat
+Put carb
+Lay do some protein
+Add some veggies
+Dollop that sour cream
+Sauce it up
+Wrap that tortilla
+
+### How Chipotle makes burritos
+Flour tortilla
+Type of rice
+Type of protein
+Which veggies
+Sour cream?
+Guac?
+Sauces?
+
+
 ```js
 // IMPERATIVE
 const cardContainer = document.querySelector("#card-container")
-const div = document.createElement("div")
-div.className = "card"
 
-const header = document.createElement("h1")
-header.textContent = "something"
+// const div = document.createElement("div")
+// div.className = "card"
 
-const content = document.createElement("p")
-content.textContent = "this is a paragraph"
+// const header = document.createElement("h1")
+// header.textContent = "something"
 
-div.append(header)
-div.append(content)
+// const content = document.createElement("p")
+// content.textContent = "this is a paragraph"
+
+// div.append(header)
+// div.append(content)
+
+cardContainer.innerHTML += `
+  <div class="card">
+    <h1>something</h1>
+    <p>this is a paragraph</p>
+  </div>
+`
+
+cardContainer.innerHTML += `
+  <div class="card">
+    <h1>something else </h1>
+    <p>this is another paragraph</p>
+  </div>
+`
 ```
 
 ```js
 // DECLARATIVE
 function createCard(header, text){
-  const cardContainer = document.querySelector("#card-container")
-
-  cardContainer.innerHTML += `
+  return `
     <div class="card">
       <h1>${header}</h1>
       <p>${text}</p>
@@ -49,12 +85,14 @@ function createCard(header, text){
   `
 }
 
-createCard("Hello world", "asuydvaisomdiajshdtfacvduijsaodn")
-createCard("Hello world", "asuydvaisomdiajshdtfacvduijsaodn")
-createCard("Hello world", "asuydvaisomdiajshdtfacvduijsaodn")
-createCard("Hello world", "asuydvaisomdiajshdtfacvduijsaodn")
-createCard("Hello world", "asuydvaisomdiajshdtfacvduijsaodn")
-createCard("Hello world", "asuydvaisomdiajshdtfacvduijsaodn")
+const cardContainer = document.querySelector("#card-container")
+
+cardContainer += createCard("Hello world", "asuydvaisomdiajshdtfacvduijsaodn")
+cardContainer += createCard("Hello world", "asuydvaisomdiajshdtfacvduijsaodn")
+cardContainer += createCard("Hello world", "asuydvaisomdiajshdtfacvduijsaodn")
+cardContainer += createCard("Hello world", "asuydvaisomdiajshdtfacvduijsaodn")
+cardContainer += createCard("Hello world", "asuydvaisomdiajshdtfacvduijsaodn")
+cardContainer += createCard("Hello world", "asuydvaisomdiajshdtfacvduijsaodn")
 ```
 
 ### Slow abstraction to JSX

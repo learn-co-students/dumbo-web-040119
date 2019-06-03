@@ -10,11 +10,34 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
+      // inside JS land 
 
+      function createHeader(greeting, name){
+        return <h1>{greeting} -{name}</h1>
+      }
+
+      const Header = (props) => {
+        console.log(props)
+        return <div> 
+          <h1>{props.greeting}! -{props.name}</h1>
+          <p>Same thing!!</p>
+        </div>
+      }
+
+
+      // ReactDOM.render takes 2 arguments
+      // 1. The JSX you want appended to the page
+      // 2. Where on the page you want to append it
       ReactDOM.render(
-        <h1>Welcome to React! -Steven</h1>
-        , document.getElementById('root'))
-    
+        <div id="beef">
+          <Header greeting="Welcome to React!" name="Steven" />
+          <Header greeting="Sup, fam?!" name="Brenden"/>
+          <Header greeting="My name is Ignio Montoya" name="Montoya"/>
+        </div>
+      , 
+        document.getElementById('root')
+      )
+
     </script>
   </body>
 </html>
