@@ -4,19 +4,22 @@ Intro to React // JSX & Props
 ## SWBATs
 - [x] Visualize/Identify Components on any website
 - [x] Explain what a Component is conceptually in the UI
-- [ ] Briefly explain Babel's purpose in React
-- [ ] Explain what a React Component actually is in code
-- [ ] Use JSX to build custom components and render them in the browser
+- [x] Briefly explain Babel's purpose in React
+- [x] Explain what a React Component actually is in code
+- [x] Use JSX to build custom components and render them in the browser
+- [x] See how props are to components as arguments are to functions
 
-- [ ] Understand how `create-react-app` works and what it offers a developer
-- [ ] Use props to make components more dynamic and reusable
-- [ ] See how props are to components as arguments are to functions
-- [ ] Begin to build modular & reusable components
-- [ ] Organize code into files and use the import-export syntax to pass code between files
-- [ ] Setup a new React app and play around with building UIs
-- [ ] **BONUS** Use the `children` prop 
+- [x] Understand how `create-react-app` works and what it offers a developer
+- [x] Organize code into files and use the import-export syntax to pass code between files
+- [x] Use props to make components more dynamic and reusable
+- [x] Begin to build modular & reusable components
+- [x] Setup a new React app and play around with building UIs
+- [x] **BONUS** Use the `children` prop 
 
 ## Notes
+- Etsy for pets - Petsy
+
+
 
 ### Declarative vs Imperative Programming
 
