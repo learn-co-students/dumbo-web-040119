@@ -1,33 +1,127 @@
-.App {
-  text-align: center;
+.item-card-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.item-card {
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 0.5px;
+  border-color: rgba(150,150,150,0.5);
+  margin: 1vw;
+  padding: 1vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+.image-wrapper {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.navbar {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 6vw;
+  margin: 1vw;
+}
+
+
+
+.search-bar > input {
+  width: 90%;
+  height: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 0px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.search-bar > button {
+  width: 10%;
+  height: 58%;
+  background-color: black;
   color: white;
+  font-weight: bold;
+  font-size: 1vw;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  position: absolute;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-bar {
+  flex-grow: 2;
+  padding: 1vw;
+  border-radius: 10px;
+  position: relative;
+  margin-right: 10vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.account-controls > * {
+  height: 100%;
+  background-color: transparent;
+  border-top-color: transparent; 
+  border-bottom-color: transparent; 
+  border-left-color: transparent; 
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.account-controls > *:hover {
+  background-color: rgba(155,155,155,0.1)
+}
+
+.account-controls button:last-child {
+  margin: 1vw;
+  border-right-color: transparent; 
+}
+
+.account-controls {
+  margin: 1vw;
+}
+
+.button-icon {
+  width: 2vw;
+}
+
+.image {
+  position: absolute;
+  max-height: 25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.category-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.category-button {
+  width: 100%;
+  text-align: center;
+  border-bottom-style: solid;
+  border-width: 3px;
+  border-color: rgba(150,150,150,0.5);
+}
+
+.category-button:hover{
+  border-color: black;
+  border-width: 3px;
+  border-bottom-style: solid;
+  z-index: 1;
 }

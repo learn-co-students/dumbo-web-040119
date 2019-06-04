@@ -2,7 +2,7 @@ State, Events, and Conditional Rendering
 ==============
 
 ## SWBATs
-- [ ] Setup a new React app and play around with building UIs
+- [x] Setup a new React app and play around with building UIs
 - [ ] Add event handlers to elements in React
 - [ ] Explain why we have Synthetic Events
 - [ ] Correctly choose when to use `props` vs `state`, and explain why one would use one or the other

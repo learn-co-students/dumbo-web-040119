@@ -1,8 +1,10 @@
 const categories = [
   {
+    id: 1,
     name: "Toys",
     items: [
       {
+        id: 1,
         name: "Skinny Peltz",
         price: 40.00,
         description: "Cute, chewy animal friends!",
@@ -11,6 +13,7 @@ const categories = [
         pet_type: "dog"
       },
       {
+        id: 2,
         name: "Striped Mice",
         price: 20.00,
         description: "Hand knit mice in a variety of colors.",
@@ -19,6 +22,7 @@ const categories = [
         pet_type: "cat"
       },
       {
+        id: 3,
         name: "Parrot Pals",
         price: 40.00,
         description: "Hand stuffed cotton parrot with real feather tail.",
@@ -27,6 +31,7 @@ const categories = [
         pet_type: "cat"
       },
       {
+        id: 4,
         name: "Ceramic Cup Noodles Cubby",
         price: 40.00,
         description: "Rolled pottery decorated as a delicious cup o' noodles.",
@@ -37,9 +42,11 @@ const categories = [
     ]
   },
   {
+    id: 2,
     name: "Clothes",
     items: [
       {
+        id: 5,
         name: "Adidog Hoody",
         price: 70.00,
         description: "Sleek hoody for athletic dogs.",
@@ -48,6 +55,7 @@ const categories = [
         pet_type: "dog"
       },
       {
+        id: 6,
         name: "Summer Pupps",
         price: 38.00,
         description: "Hand sewn patterned t-shirt.",
@@ -56,6 +64,7 @@ const categories = [
         pet_type: "dog"
       },
       {
+        id: 7,
         name: "Hamosaur",
         price: 25.00,
         description: "Cute felt dino costumes for your little hammies.",
@@ -64,6 +73,7 @@ const categories = [
         pet_type: "hamster"
       },
       {
+        id: 8,
         name: "The Red Nosed Iguanadeer",
         price: 57.00,
         description: "Velvet and cotton iguana costume.",
@@ -74,9 +84,11 @@ const categories = [
     ]
   },
   {
+    id: 3,
     name: "Treats",
     items: [
       {
+        id: 9,
         name: "Peanut Butter Bones",
         price: 37.00,
         description: "Crunchy, grain-free peanut butter snackies for your pups.",
@@ -85,6 +97,7 @@ const categories = [
         pet_type: "dog"
       },
       {
+        id: 10,
         name: "Duck Jerky",
         price: 57.00,
         description: "Hand-cured duck jerky bites. Perfect for a good dog.",
@@ -93,6 +106,7 @@ const categories = [
         pet_type: "dog"
       },
       {
+        id: 11,
         name: "Iguana Bowls",
         price: 12.00,
         description: "Hand-picked salad mixes made fresh everyday.",
@@ -101,6 +115,7 @@ const categories = [
         pet_type: "iguana"
       },
       {
+        id: 12,
         name: "Homemade Cat Treats",
         price: 23.00,
         description: "A batch of easy, homemade cat treats, perfect for fussy cats.",
