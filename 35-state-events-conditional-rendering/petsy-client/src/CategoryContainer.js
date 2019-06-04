@@ -7,7 +7,7 @@ class CategoryContainer extends React.Component {
       <div className="category-bar">
         {
           this.props.categories.map(category => {
-            return <CategoryButton key={category.id} name={category.name} />
+            return <CategoryButton changeCategory={this.props.changeCategory} key={category.id} category={category} />
           })
         }
       </div>

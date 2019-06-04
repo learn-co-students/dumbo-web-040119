@@ -1,10 +1,19 @@
 import React from 'react'
 
 class CategoryButton extends React.Component {
+
+  // static classFunction(){
+
+  // }
+
+  handleClick = (event) => {
+    this.props.changeCategory(this.props.category)
+  }
+
   render(){
     return (
-      <div className="category-button">
-        <h3>{this.props.name}</h3>
+      <div onClick={this.handleClick} className="category-button">
+        <h3>{this.props.category.name}</h3>
       </div>
     )
   }
