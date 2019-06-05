@@ -13,8 +13,8 @@ class Navbar extends React.Component {
             alt="logo"
           />
         </div>
-        <SearchBar />
-        <AccountControlModule />
+        <SearchBar changeFilter={this.props.changeFilter} />
+        <AccountControlModule openCart={this.props.openCart} />
       </div>
     )
   }

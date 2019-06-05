@@ -2,16 +2,35 @@ State and Controlled Forms
 ======================
 
 ## SWBATs
-- [ ] Draw a component hierarchy and describe the Flow of Information
-- [ ] Pass data up and down the component hierarchy with our callbacks
-- [ ] Manipulate the DOM by changing values in `state` instead of using vanilla JS
-- [ ] Write fully controlled forms
+- [x] Draw a component hierarchy and describe the Flow of Information
+- [x] Pass data up and down the component hierarchy with our callbacks
+- [x] Manipulate the DOM by changing values in `state` instead of using vanilla JS
+- [x] Write fully controlled forms
 
 ## Lecture Notes
 
-### Using State
+### Controlled Forms
 
-### Forms
+In React, rather than finding individual input elements using `querySelector` or `getElementBy...`, we use `state` to monitor the user's input as they type.
+
+The all-purpose `handleChange`. Just remember to add `name` attributes to your inputs!
+```js
+handleChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+  }
+```
+
+Doing this creates a 1-way connection wherein user input changes `state`. This is called an *uncontrolled form*. To make it a 2-way street wherein `state` can change the user's input, we add a `value` attribute to our inputs.
+
+```jsx
+<input 
+  value={this.state.beef} 
+  name="beef" 
+  onChange={this.handleChange}
+/>
+```
 
 ### Lifting State
 

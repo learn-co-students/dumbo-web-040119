@@ -17,7 +17,7 @@ class AccountControlModule extends React.Component {
           <img className="button-icon" src="https://image.flaticon.com/icons/png/128/126/126486.png" alt="icon"/><br/>
           Account
         </button>
-        <button>
+        <button onClick={this.props.openCart}>
           <img className="button-icon" src="http://files.softicons.com/download/business-icons/free-e-commerce-icons-by-design-bolts/ico/Cart-Icon.ico" alt="icon"/><br/>
           Cart
         </button>
