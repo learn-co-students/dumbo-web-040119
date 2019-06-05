@@ -1,4 +1,4 @@
-Controlled Forms and Lifting State
+State and Controlled Forms
 ======================
 
 ## SWBATs

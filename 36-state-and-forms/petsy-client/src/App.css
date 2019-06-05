@@ -12,7 +12,6 @@
   padding: 1vw;
 }
 
-
 .image-wrapper {
   height: 300px;
   position: relative;
@@ -29,13 +28,14 @@
 .logo {
   max-width: 6vw;
   margin: 1vw;
+  background-color: orange;
+  border-radius: 60px;
+  padding: 1vw;
 }
 
-
-
 .search-bar > input {
-  width: 90%;
-  height: 50%;
+  width: 89%;
+  height: 35%;
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
@@ -47,7 +47,7 @@
 
 .search-bar > button {
   width: 10%;
-  height: 58%;
+  height: 41%;
   background-color: black;
   color: white;
   font-weight: bold;
@@ -68,10 +68,8 @@
   margin-right: 10vw;
 }
 
-
-
 .account-controls > * {
-  height: 100%;
+  height: 50%;
   background-color: transparent;
   border-top-color: transparent; 
   border-bottom-color: transparent; 
@@ -81,7 +79,7 @@
 }
 
 .account-controls > *:hover {
-  background-color: rgba(155,155,155,0.1)
+  background-color: rgba(255,165,0,0.6)
 }
 
 .account-controls button:last-child {
@@ -125,4 +123,12 @@
   border-width: 3px;
   border-bottom-style: solid;
   z-index: 1;
+}
+
+button {
+  outline: none;
+}
+
+input {
+  outline: none;
 }
