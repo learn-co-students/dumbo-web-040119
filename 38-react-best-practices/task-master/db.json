@@ -1,24 +1,74 @@
 {
   "tasks": [
     {
-      "content": "Do the Lifecycle Labs for Monday",
+      "content": "SWBAT Begin using the React Dev Tools",
       "completed": false,
       "id": 1
     },
     {
-      "content": "Schedule a 1-on-1 with Ryan/Leizl",
-      "completed": true,
+      "content": "SWBAT Write cleaner React code",
+      "completed": false,
       "id": 2
     },
     {
-      "content": "Do the thing",
-      "completed": true,
+      "content": "Code Organization/file structure (Containers vs Components)",
+      "completed": false,
       "id": 3
     },
     {
-      "content": "Make a React App over the weekend",
+      "content": "Presentational vs Container components",
       "completed": false,
       "id": 4
+    },
+    {
+      "content": "Implicit return for Functional components",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "content": "Fragments",
+      "completed": false,
+      "id": 6
+    },
+    {
+      "content": "Callbacks (avoid useless wrapping)",
+      "completed": false,
+      "id": 7
+    },
+    {
+      "content": "Syntax Trick: Arrow functions returning objects",
+      "completed": false,
+      "id": 8
+    },
+    {
+      "content": "Syntax Trick: Destructuring",
+      "completed": false,
+      "id": 9
+    },
+    {
+      "content": "Syntax Trick: Spread Part 1 - Prepending and appending",
+      "completed": false,
+      "id": 10
+    },
+    {
+      "content": "Syntax Trick: Spread Part 2 - Objects with the same key/value name",
+      "completed": false,
+      "id": 11
+    },
+    {
+      "content": "constructor() vs. ES7 instance variables",
+      "completed": false,
+      "id": 12
+    },
+    {
+      "content": ".map() as a way to update objects in an array of objects",
+      "completed": false,
+      "id": 13
+    },
+    {
+      "content": "{ [variable]: \"as_key\" }",
+      "completed": false,
+      "id": 14
     }
   ]
 }

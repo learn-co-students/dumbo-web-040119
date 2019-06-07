@@ -1,5 +1,5 @@
 import React from 'react'
-import Task from '../components/Task'
+import TaskCard from '../components/TaskCard'
 import Search from '../components/Search'
 import { Card, Form } from 'semantic-ui-react'
 
@@ -17,7 +17,7 @@ class TaskContainer extends React.Component {
   formatCards = givenTasks => {
     const {completeTask, deleteTask, patchTask} = this.props
     return this.filtration(givenTasks)
-    .map(task => <Task
+    .map(task => <TaskCard
       completeTask={completeTask}
       deleteTask={deleteTask}
       patchTask={patchTask}
@@ -28,7 +28,8 @@ class TaskContainer extends React.Component {
 
   filtration = givenTasks => (
     givenTasks.filter(task =>
-      task.content.includes(this.state.searchTerm)
+      task.content.toLowerCase()
+      .includes(this.state.searchTerm.toLowerCase())
     )
   )
 

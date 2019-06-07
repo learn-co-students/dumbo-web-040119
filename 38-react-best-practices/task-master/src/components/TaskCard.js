@@ -3,7 +3,7 @@ import { Card } from 'semantic-ui-react'
 import TaskDetails from './TaskDetails'
 import EditForm from './EditForm'
 
-class Task extends React.Component {
+class TaskCard extends React.Component {
   state = {
     editing: false
   }
@@ -32,4 +32,4 @@ class Task extends React.Component {
   }
 }
 
-export default Task;
+export default TaskCard;
