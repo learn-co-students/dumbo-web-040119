@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    {
+      "content": "Do the Lifecycle Labs for Monday",
+      "completed": false,
+      "id": 1
+    },
+    {
+      "content": "Schedule a 1-on-1 with Ryan/Leizl",
+      "completed": true,
+      "id": 2
+    },
+    {
+      "content": "Do the thing",
+      "completed": true,
+      "id": 3
+    },
+    {
+      "content": "Make a React App over the weekend",
+      "completed": false,
+      "id": 4
+    }
+  ]
+}
