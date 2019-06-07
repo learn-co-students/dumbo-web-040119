@@ -4,9 +4,17 @@ import TaskDetails from './TaskDetails'
 import EditForm from './EditForm'
 
 class TaskCard extends React.Component {
-  state = {
-    editing: false
+  constructor() {
+    super()
+    this.state = {
+      editing: false
+    }
   }
+
+
+  // state = {
+  //   editing: false
+  // }
 
   editClickEvent = event => this.setState({ editing: !this.state.editing })
 

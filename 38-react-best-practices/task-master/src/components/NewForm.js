@@ -16,7 +16,9 @@ class NewForm extends React.Component {
   }
 
   changeEvent = event => {
-    this.setState({content: event.target.value})
+    this.setState({
+      [event.target.name]: event.target.value
+    })
   }
 
   togglePostForm = event => {
@@ -40,6 +42,7 @@ class NewForm extends React.Component {
             placeholder='Start writing here...'
             value={this.state.content}
             onChange={this.changeEvent}
+            name="content"
             />
               <Button color="green">Submit</Button>
               <Button onClick={this.togglePostForm}>Cancel</Button>

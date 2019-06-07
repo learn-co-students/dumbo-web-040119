@@ -23,6 +23,8 @@ class App extends React.Component {
     })
   }
 
+
+  // Fetches
   completeTask = task => {
     fetch(`${tasksIndexUrl}/${task.id}`, {
       method: "PATCH",
@@ -58,7 +60,7 @@ class App extends React.Component {
     .then(res => res.json())
     .then(data => {
       this.setState({
-        allTasks: [...this.state.allTasks, data]
+        allTasks: [data, ...this.state.allTasks]
       })
     })
   }
@@ -95,6 +97,8 @@ class App extends React.Component {
     })
   }
 
+
+  // Methods for filtering Tasks
   activeTasks = _ => (
     this.state.allTasks.filter(task => !task.completed)
   )
@@ -102,7 +106,6 @@ class App extends React.Component {
   completedTasks = _ => (
     this.state.allTasks.filter(task => task.completed)
   )
-
 
   render() {
     return (

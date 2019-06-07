@@ -1,74 +1,79 @@
 {
   "tasks": [
     {
-      "content": "SWBAT Begin using the React Dev Tools",
-      "completed": false,
+      "content": "SWBAT Begin using the React Dev Tools something was missing!",
+      "completed": true,
       "id": 1
     },
     {
       "content": "SWBAT Write cleaner React code",
-      "completed": false,
+      "completed": true,
       "id": 2
     },
     {
       "content": "Code Organization/file structure (Containers vs Components)",
-      "completed": false,
+      "completed": true,
       "id": 3
     },
     {
       "content": "Presentational vs Container components",
-      "completed": false,
+      "completed": true,
       "id": 4
     },
     {
       "content": "Implicit return for Functional components",
-      "completed": false,
+      "completed": true,
       "id": 5
     },
     {
       "content": "Fragments",
-      "completed": false,
+      "completed": true,
       "id": 6
     },
     {
       "content": "Callbacks (avoid useless wrapping)",
-      "completed": false,
+      "completed": true,
       "id": 7
     },
     {
       "content": "Syntax Trick: Arrow functions returning objects",
-      "completed": false,
+      "completed": true,
       "id": 8
     },
     {
       "content": "Syntax Trick: Destructuring",
-      "completed": false,
+      "completed": true,
       "id": 9
     },
     {
       "content": "Syntax Trick: Spread Part 1 - Prepending and appending",
-      "completed": false,
+      "completed": true,
       "id": 10
     },
     {
       "content": "Syntax Trick: Spread Part 2 - Objects with the same key/value name",
-      "completed": false,
+      "completed": true,
       "id": 11
     },
     {
       "content": "constructor() vs. ES7 instance variables",
-      "completed": false,
+      "completed": true,
       "id": 12
     },
     {
       "content": ".map() as a way to update objects in an array of objects",
-      "completed": false,
+      "completed": true,
       "id": 13
     },
     {
       "content": "{ [variable]: \"as_key\" }",
-      "completed": false,
+      "completed": true,
       "id": 14
+    },
+    {
+      "content": "dddddddddddfdfdsdd",
+      "completed": true,
+      "id": 15
     }
   ]
 }

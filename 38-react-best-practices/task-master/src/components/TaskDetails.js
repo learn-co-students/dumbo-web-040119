@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Card, Button, Icon } from 'semantic-ui-react'
 
 const TaskDetails = ({task, completeTask, deleteTask, editClickEvent}) => {
@@ -7,7 +7,7 @@ const TaskDetails = ({task, completeTask, deleteTask, editClickEvent}) => {
   const handleEditClick = event => editClickEvent(task)
 
   return (
-    <React.Fragment>
+    <>
 
       <Card.Content>
         <Card.Header>
@@ -24,7 +24,7 @@ const TaskDetails = ({task, completeTask, deleteTask, editClickEvent}) => {
             ? <Button onClick={doneClickEvent}>
                 <Icon name='undo'/> Undone
               </Button>
-            : <Button positive onClick={doneClickEvent}>
+            : <Button positive onClick={(event, domElement) => doneClickEvent(event, event.target)}>
                 <Icon name='check'/> Done
               </Button>
           }
@@ -36,7 +36,7 @@ const TaskDetails = ({task, completeTask, deleteTask, editClickEvent}) => {
           </Button>
         </Button.Group>
       </Card.Content>
-    </React.Fragment>
+    </>
   );
 }
 
