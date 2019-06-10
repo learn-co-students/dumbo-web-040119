@@ -11,6 +11,8 @@ class ItemCard extends React.Component {
         <h3>{name}</h3>
         <p>{description}</p>
         <strong>${price}</strong>
+        <button onClick={() => this.props.action(this.props.item)} >{this.props.cartMode ? "Remove from cart" : "Add to cart"}</button>
+    
       </div>
     )
   }

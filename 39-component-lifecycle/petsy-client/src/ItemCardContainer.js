@@ -7,7 +7,7 @@ class ItemCardContainer extends React.Component {
       <div className="item-card-container">
         {
           this.props.items.map(item => {
-            return <ItemCard key={item.id} item={item}/>
+            return <ItemCard key={item.id} cartMode={this.props.cartMode} item={item} action={this.props.action}/>
           })
         }
       </div>

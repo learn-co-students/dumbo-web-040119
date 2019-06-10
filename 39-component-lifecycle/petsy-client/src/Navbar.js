@@ -6,7 +6,7 @@ class Navbar extends React.Component {
   render(){
     return (
       <div className="navbar">
-        <div>
+        <div onClick={() => this.props.changeView("home")}>
           <img 
             className="logo" 
             src="https://image.flaticon.com/icons/png/512/34/34872.png"
@@ -14,7 +14,7 @@ class Navbar extends React.Component {
           />
         </div>
         <SearchBar changeFilter={this.props.changeFilter} />
-        <AccountControlModule openCart={this.props.openCart} />
+        <AccountControlModule changeView={this.props.changeView} />
       </div>
     )
   }

@@ -10,7 +10,7 @@ class MainContainer extends React.Component {
 
     return (
       <div>
-        <ItemCardContainer items={filteredItems} />
+        <ItemCardContainer cartMode={false} items={filteredItems} action={this.props.addToCart} />
       </div>
     )
   }
