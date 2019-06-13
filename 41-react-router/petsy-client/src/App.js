@@ -5,6 +5,7 @@ import MainContainer from './MainContainer'
 import Navbar from './Navbar'
 import Cart from './Cart'
 import CategoryContainer from './CategoryContainer'
+import ItemCardContainer from './ItemCardContainer'
 
 import { Route, Switch, Redirect } from 'react-router-dom'
 
@@ -98,18 +99,35 @@ class App extends React.Component {
               {...routerProps}
               items={this.state.cart}/>
           }}/>
-          <Route path="/home" render={() =>{
+          <Route path="/home/:category" render={(routerProps) =>{
+            const chosenCategory = this.state.categories.find(category => {
+              return category.name.toLowerCase() === routerProps.match.params.category.toLowerCase()
+            })
             return <Fragment>
               <CategoryContainer 
                 categories={this.state.categories} 
-                changeCategory={this.changeCategory} 
               />
               <MainContainer
                 filter={this.state.filter} 
-                category={this.state.selectedCategory}
+                category={chosenCategory}
                 addToCart={this.addToCart}
               />
             </Fragment>
+          }}/>
+          <Route path="/home" render={(routerProps) => {
+            let allItems = []
+
+            this.state.categories.forEach(cat => {
+              allItems = [...allItems, ...cat.items]
+            })
+            
+            return <Fragment>
+              <CategoryContainer 
+                categories={this.state.categories} 
+              />
+              <ItemCardContainer items={allItems}/>
+            </Fragment>
+
           }}/>
         {/*Default route */}
           <Route render={() => <Redirect to="/home"/>}/>

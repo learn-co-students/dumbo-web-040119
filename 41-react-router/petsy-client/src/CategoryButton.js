@@ -1,8 +1,10 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom'
 
 class CategoryButton extends React.Component {
   handleClick = (event) => {
-    this.props.changeCategory(this.props.category)
+    // this.props.changeCategory(this.props.category)
+    this.props.history.push(`/home/${this.props.category.name.toLowerCase()}`)
   }
 
   render(){
@@ -14,4 +16,4 @@ class CategoryButton extends React.Component {
   }
 }
 
-export default CategoryButton
+export default withRouter(CategoryButton)

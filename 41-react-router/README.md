@@ -7,8 +7,8 @@ React Router
 - [x] Explain the advantages of using React Router
 - [x] Utilize the most common `react-router` components to build a SPA: `BrowserRouter`, `Link`, `NavLink`, `Route`, `Switch`
 - [x] Use `push`, `Redirect`, and `history` to navigate pages
-- [ ] Create dynamic routes and use `params`
-- [ ] Make the distinction between `state` being one _Single Source of Truth_ and `react-router` being another _Single Source of Truth_
+- [x] Create dynamic routes and use `params`
+- [x] Make the distinction between `state` being one _Single Source of Truth_ and `react-router` being another _Single Source of Truth_
 
 ## Lecture Notes
 
