@@ -16,7 +16,10 @@ class Api::V1::UsersController < ApplicationController
 		)
 
 		if user.save
-			render json: user
+
+			token = encode_token(user.id)
+
+			render json: {user: UserSerializer.new(user), token: token}
 		else
 			render json: {errors: user.errors.full_messages}
 		end
@@ -25,9 +28,13 @@ class Api::V1::UsersController < ApplicationController
 	def add_balance
 		user = User.find(params[:id])
 
-		user.update(balance: user.balance+params[:balance].to_f)
+		if user.id == session_user.id
+			user.update(balance: user.balance+params[:balance].to_f)
 
-		render json: user
+			render json: user
+		else 
+			render json: {errors: "This ain't your wallet!"}
+		end
 	end
 
 	def get_bot

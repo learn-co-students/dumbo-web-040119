@@ -14,10 +14,19 @@ class Api::V1::BotsController < ApplicationController
 	end
 
 	def purchase
+		user = session_user
 		bot = Bot.find(params[:id])
 
-		bot.update(for_sale: false)
-		
-		render json: bot
+		new_balance = user.balance - bot.price
+		if new_balance >= 0
+
+			bot.update(for_sale: false, owner: user)
+			user.update(balance: new_balance)
+			
+			render json: bot
+		else 
+
+			render json: {errors: "Not enough monies!"}
+		end
 	end
 end

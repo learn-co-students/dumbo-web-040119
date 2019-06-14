@@ -49,15 +49,21 @@ class Profile extends React.Component {
 			headers: {
 				"Content-Type": "application/json",
 				"Accepts": "application/json",
+				"Authorization": localStorage.getItem("user_id")
 			},
 			body: JSON.stringify({balance: this.state.balance})
 		})
 		.then(res => res.json())
 		.then(response => {
-			this.setState({
-				user: response,
-				balance: 0,
-			})
+			if (response.errors){
+				alert(response.errors)
+			} else {
+				this.setState({
+					user: response,
+					balance: 0,
+				})
+			}
+			
 		})
 	}
 

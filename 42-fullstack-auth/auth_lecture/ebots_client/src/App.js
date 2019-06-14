@@ -13,6 +13,29 @@ class App extends Component {
 		currentUser: null
 	}
 
+	componentDidMount(){
+		const token = localStorage.getItem("token")
+		if(token){
+			// let's go get some user data
+			fetch("http://localhost:3001/api/v1/auto_login", {
+				headers: {
+					"Authorization": token
+				}
+			})
+			.then(res => res.json())
+			.then(response => {
+				if (response.errors){
+					localStorage.removeItem("user_id")
+					alert(response.errors)
+				} else {
+					this.setState({
+						currentUser: response
+					})
+				}
+			})
+		}
+	}
+
 	setCurrentUser = (user) => {
 		this.setState({
 			currentUser: user

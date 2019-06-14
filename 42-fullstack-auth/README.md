@@ -1,10 +1,10 @@
 # Fullstack Auth
 
 ## SWBATs
-- [ ] Use Bcrypt to encrypt passwords and authenticate users
+- [x] Use Bcrypt to encrypt passwords and authenticate users
+- [x] Use client-side routing to control user flow
 - [ ] Use `localStorage` to store information on a user's browser
 - [ ] Use headers on a request
-- [ ] Use client-side routing to control user flow
 - [ ] Use JWT to encode and decode information
 
 
