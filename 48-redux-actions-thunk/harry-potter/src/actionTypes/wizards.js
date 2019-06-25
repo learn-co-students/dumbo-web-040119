@@ -1,0 +1,3 @@
+export const ADD_WIZARD = "ADD_WIZARD"
+export const LOADED_WIZARDS = "LOADED_WIZARDS"
+export const LOADING_WIZARDS = "LOADING_WIZARDS"
