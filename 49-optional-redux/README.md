@@ -2,7 +2,7 @@
 Uses a pub/sub pattern. Components can subscribe to get state (memory) updates from the store.
 
 ### Step - 1: We need a store:
-Store is where we keep our state (memory). If we want to get the state, we get it from the store. If we want to update the state, we get it from the store.
+Store is where we keep our state (memory). If we want to get the state, we get it from the store. If we want to update the state, we send messages to the store.
 ```javascript
 const store = createStore()
 ```
