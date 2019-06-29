@@ -6,7 +6,7 @@ Store is where we keep our state (memory). If we want to get the state, we get i
 ```javascript
 const store = createStore()
 ```
-To create the store, we need a reducer. The reducer is a giant if/else function that dictates how our store can update the state of our app.
+To create the store, we need a reducer. The reducer is a giant if/else function that dictates how our store will respond to the messages we send to it. Consequently, it also dictates possible ways our app's state will change.
 
 
 The reducer should accept two arguments. The current state, and an action(object).
@@ -16,6 +16,7 @@ const reducer = (state, action) => {
   return state
 }
 ```
+What ever the reducer returns will become our new app state. So if you ever forget to return, our entire app state will be come `undefined`! 😱 
 ### Step - 2: Provide the store to our app:
 Great, we have a store how can we use it in our redux app? Thanks to a npm package called `react-redux`, we have an easy way to set that up.
 
